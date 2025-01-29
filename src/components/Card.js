@@ -10,16 +10,16 @@ const Card = ({ title, description, imageSrc }) => {
   // You should be able to implement the component with the elements imported above.
   // Feel free to import other UI components from Chakra UI if you wish to.
   
-  return (<Stack>
+  return (<HStack>
     <div className="main_container">
-      <img src={imageSrc} className="image" />
+      <Image src={imageSrc} className="image" />
       <div className="discription">
       <Heading as='h6' className="head_text">{title}</Heading>
       <Text className="text">{description}</Text>
       <p className="seeMore">see more <FontAwesomeIcon icon={faArrowRight} size="1x" /></p>
       </div>
     </div>
-  </Stack>);
+  </HStack>);
 };
 
 export default Card;
